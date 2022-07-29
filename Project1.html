@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoGi Fitness</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <style>
+      /* CSS Reset */
+      body{
+        margin: 0px;
+        padding: 0px;
+        background: url('yoga.jpg');
+        color: rgb(104, 6, 104);
+        font-size: 20px;
+      }
+      .left{
+
+        /* border: 2px solid rgb(241, 98, 98); */
+        font-weight: bold;
+        font-size: 25px;
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 2px;
+        font-family: 'Hubballi', cursive;
+      }
+      /* .left div{
+        text-align: center;
+      } */
+      .left img{
+        width: 80px;
+        filter: invert(100%);   /*coverts balck to white img n vise versa */
+      }
+      .mid{
+
+        /* border: 2px solid rgb(241, 98, 98);    */
+        /*for centering there are 3 condition 1:display should be block, 2:set width , 3:margin should be suto*/
+        display: block;
+        width: 55%;
+        margin:  auto;
+        top: 2px;
+      }
+      .right{
+        /* border: 2px solid rgb(241, 98, 98); */
+                display: inline-block; 
+                position: absolute;
+                right: 34px;
+                top: 20px;
+      }
+      .navbar{
+        display: inline-block;
+        
+      }
+      .navbar li{
+        display: inline-block;
+        font-size: 25px;
+      }
+      .navbar li a{
+        color: rgb(104, 6, 104);
+        text-decoration: none;
+        padding: 15px ;
+      }
+      .navbar li a:hover, .navbar li a.active{
+        
+        color: rgb(230, 63, 63);
+        text-decoration: underline;
+        padding: 15px ;
+        font-weight: bold;
+      }
+      .btn{
+        margin: 0px 9px;
+        color: rgb(104, 6, 104);
+        background-color: white;
+        padding: 3px 4px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 2px solid rgb(107, 175, 231);
+        cursor: pointer;
+
+      }
+      .btn:hover{
+        color: rgb(230, 63, 63);
+        font-weight: bold;
+      }
+      .container{
+        /* border: 2px solid green; */
+        display: inline-block; 
+                position: absolute;
+        /* margin: 16px 18px; */
+        padding: 75px;
+        width: 28%;
+        border-radius: 28px;
+        right: 34px;
+        top: 100px;
+        height: 50%;
+      }
+      .formGroup input{
+        text-align: center;
+        display: inline-block;
+        width: 250px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 13px  auto;
+        font-size: 15px;
+        border-radius: 20px;
+      }
+      .container h1{
+        text-align: center;
+      }
+      .container button{
+        display: block;
+        width: 28%;
+        margin: 13px auto;
+        height: 28px;
+      }
+      
+    </style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>YoGi Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+           <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- ?right box for buttons -->
+        <div class="right">
+            <button class="btn">
+
+                Call Us Now
+            </button>
+            <button class="btn">
+
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+      <h1>Join to YoGi Fitness</h1>
+      <form action="noaction.php">
+        <div class="formGroup">Name:
+          <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="formGroup">Age: 
+          <input type="number" name="" placeholder="Enter your Age">
+        </div>
+        <div class="formGroup">Place:
+          <input type="text" name="" placeholder="Enter your Place">
+        </div>
+        <div class="formGroup">Email:
+          <input type="email" name="" placeholder="Enter your Email">
+        </div>
+        <button class="btn">
+          Submit
+        </button>
+      </form>
+    </div>
+</body>
+</html>
